@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <p id = "Password Generator"></p>
+    <script> 
+    var lowercase="abcdefghijklmnopqrstuvwxyz"
+var uppercase="abcdefghijklmnopqrstuvwxyz".toUpperCase ()
+var SpecialCharacters="!@#$%^&*()?~+_=-"
+var number ="0123456789"
+
+var randomPickLowerCase=Math.floor(Math.random()*lowercase.length)
+var pickOneLowerCaseLetter=lowercase.charAt(randomPickLowerCase)
+
+var randomPickUpperCase=Math.floor(Math.random()*uppercase.length)
+var pickOneUppercaseLetter=uppercase.charAt(randomPickUpperCase)
+
+var randomPickSpecial=Math.floor(Math.random()*SpecialCharacters.length)
+var pickOneSpecialCharacterletter=SpecialCharacters.charAt(randomPickSpecial)
+
+var randomPickNumber=Math.floor(Math.random()*number.length)
+var pickOneNumber=number.charAt(randomPickNumber)
+
+console.log(pickOneLowerCaseLetter, pickOneUppercaseLetter, pickOneSpecialCharacterletter, pickOneNumber)
+</script>
+    <script src="./assets/js/game.js"></script>
+  </body>
+</html>
