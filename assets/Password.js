@@ -27,9 +27,9 @@ var generatePassword=function(){
     var pickOneLowerCaseLetter=lowercase.charAt(randomPickLowerCase)
     finalPassword=finalPassword + pickOneLowerCaseLetter    
     }
-    if (isUppercase){ var randomPickUpperCase=Math.floor(Math.random()*uppercase.length)
-    var pickOneUppercaseLetter=uppercase.charAt(randomPickUpperCase)
-    finalPassword=finalPassword + pickOneUpperCaseLetter
+    if (isUppercase){ var randomPickUppercase=Math.floor(Math.random()*uppercase.length)
+    var pickOneUppercaseLetter=uppercase.charAt(randomPickUppercase)
+    finalPassword=finalPassword + pickOneUppercaseLetter
     }
     
     if (isSpecialcharacter){ var randomPickSpecialcharacter=Math.floor(Math.random()*SpecialCharacters.length)
@@ -37,12 +37,12 @@ var generatePassword=function(){
     finalPassword=finalPassword + pickOneSpecialcharacter }
 
     if (isnumber){randomPickNumber=Math.floor(Math.random()*number.length)
-    var pickOneNumber = number.CharAT(randomPickNumber)
+    var pickOneNumber = number.charAt(randomPickNumber)
     finalPassword=finalPassword + pickOneNumber
     }
-    console.log(pickOneLowerCaseLetter, pickOneUppercaseLetter, pickOneSpecialCharacterLetter, pickOneNumber)
+    console.log(pickOneLowerCaseLetter, pickOneUppercaseLetter, pickOneSpecialcharacter, pickOneNumber)
     var finalPassword=""
-    for(var i =0; i < 8; i++){console.log(FinalPassword[i]); console.log(i)}
+    for(var i =0; i > 8; i++){console.log(finalPassword[i]); console.log(i)}
     return finalPassword
     }
     //form generatePassword();
