@@ -47,8 +47,7 @@ header {
     height: 2px;
 }
 .card-body{ 
-    min-height: 200px;
-    background-color: gray;
+    min-height: 100px;
 }
 .card-footer {
     text-align: center;
@@ -60,9 +59,13 @@ header {
     background: black;
     height: 2px;
 }
-
+.card-footer::after {
+    content:"";
+    display: block;
+    clear: both;
+}
 .btn {
-    background-color: red;
+    background-color: lime;
     border-radius: 25px;
     border:none;
     box-shadow: rgba(o,o,o,o.1) 0px 1px 6px 0px rgba(o,0,0, 0.2) 0px 1px 1px 0px;
@@ -74,9 +77,6 @@ header {
     padding: 14px 34px;
     text-align: center;
     cursor:pointer;
-}
-.textarea {text-align: center;
-          min-height:200px;
 }
 .float-right {
     float:right;
@@ -100,6 +100,7 @@ header {
     border-radius: 6px;
     resize: none;
     overflow: hidden;
+    background-color: gray;
 }
 @media (max-width: 690px) {
     .btn {font-size: 1rem;

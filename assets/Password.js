@@ -6,23 +6,25 @@ var generatePassword=function(){
     var SpecialCharacters="!@#$%^&*()?~+_=-"
     var number ="0123456789"
     
-    var passwordsize = confirm("how many characters would you like your password to contain?")
+    var passwordsize = prompt("how many characters would you like your password to contain?")
     
     console.log(passwordsize)
 
     var isLowerCase = confirm("Does your password include lowercase?")
 
-    console.log (isLowerCase)
+    
 
     var isUppercase = confirm("Does your password include uppercase?")
 
-    console.log (isUppercase)
+  
 
     var isSpecialcharacter = confirm("Does your password include Special Characters?")
-    console.log (isSpecialcharacter)
+
 
     var isnumber = confirm("Does your password include a number?")
-    if (isLowerCase){
+    console.log(isLowerCase)
+
+    if (isLowerCase) {
     var randomPickLowerCase=Math.floor(Math.random()*lowercase.length)
     var pickOneLowerCaseLetter=lowercase.charAt(randomPickLowerCase)
     finalPassword=finalPassword + pickOneLowerCaseLetter    
@@ -41,21 +43,19 @@ var generatePassword=function(){
     finalPassword=finalPassword + pickOneNumber
     }
     console.log(pickOneLowerCaseLetter, pickOneUppercaseLetter, pickOneSpecialcharacter, pickOneNumber)
-    var finalPassword=""
-    for(var i =0; i > 8; i++){console.log(finalPassword[i]); console.log(i)}
+   
+    for(var i =0; i < 8; i++){console.log(finalPassword[i]); console.log(i)}
+ 
     return finalPassword
-    }
+}
     //form generatePassword();
 
     var generateBtn = document.querySelector("#generate");
 
     //write password to the #password input
-    function writePassword() {
-    var password="" 
+    function writePassword() { 
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
-
-
 
     passwordText.value = password;
     }
