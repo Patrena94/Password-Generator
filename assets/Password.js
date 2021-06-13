@@ -24,6 +24,17 @@ var generatePassword=function(){
     var isnumber = confirm("Does your password include a number?")
     console.log(isLowerCase)
 
+    var Passwordsize =["lowercase", "uppercase", "Special Characters", "number"];
+    var x=8
+    while(x>= finalPassword.length) { console.timeLog(Passwordsize[i]);
+    }
+  
+   //let i=8
+   //while(i>= Passwordsize.length)
+   //{console.log('index: ${i}, value ${finalPassword[i]}'); i++;
+  // } 
+   //while(i,8);
+
     if (isLowerCase) {
     var randomPickLowerCase=Math.floor(Math.random()*lowercase.length)
     var pickOneLowerCaseLetter=lowercase.charAt(randomPickLowerCase)
@@ -44,13 +55,16 @@ var generatePassword=function(){
     }
     console.log(pickOneLowerCaseLetter, pickOneUppercaseLetter, pickOneSpecialcharacter, pickOneNumber)
    
-    for(var i =0; i < 8; i++){console.log(finalPassword[i]); console.log(i)}
+
  
     return finalPassword
 }
     //form generatePassword();
 
     var generateBtn = document.querySelector("#generate");
+
+    const passwordmin =8;
+    const passwordMax = 128;
 
     //write password to the #password input
     function writePassword() { 
