@@ -23,30 +23,66 @@ added and active element to change the button to purple when clicked.
  let Characters= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ||}}[]:;'<>.,!@#$%^&*()?~+_=-0123456789"
    let passwordlength = 8
    let passwordValue ="final Password";
-   
    for(let i = 0; i <passwordLength; i++) {
    let number = Math.floor(Math.random()*Characters.length);
    passwordValue += Characters.substring(number, number + 1)
-}
-Removed the below code determined to be unnecessary for generating a password.
-) {
-    if (isLowerCase) {
+}  
+added footer
+removed below text to allow for a password to populate.
+ // var Passwordsize ="";
+  //  for(var i=0; i < passwordsize; i++) {
+  //  var trueRandom = RandomChar[Math.floor(Math.random() * RandomChar.length)]; 
+  //  Passwordsize += trueRandom;
+ //   }
+    
+
+  //(let index = 0, index < Passwordsize.length; index++) { 
+    //var finalPassword = [lowercase, uppercase, SpecialCharacters, number];{
+ //  if(passwordsize < 8 || passwordsize > 128) {alert("enter a character size that is between 8 and 128");
+ // }
+   //  if(passwordsize >= 8 && passwordsize <=128) {//prompts for password critera
+   // } 
+
+  // if(LowerCase===false && number ===false && Uppercase ===false && SpecialCharacters ===false)
+   // {alert("error please confirm a set of critera!")}
+   //var Passwordsize ="";
+  //  for(var i=0; i < Passwordsize; i++) {
+  //  var trueRandom = RandomChar[Math.floor(Math.random() * RandomChar.length)]; 
+  //  Passwordsize += trueRandom;
+ //   }  
+
+    // if(Passwordsize < 8 || Passwordsize > 128) 
+ // {alert("enter a character size that is between 8 and 128");
+ // }
+    //if(Passwordsize >= 8 &&Passwordsize <=128) {//prompts for password critera
+   // } 
+    
+   // if(Passwordsize < 8 || Passwordsize > 128) 
+ // {alert("enter a character size that is between 8 and 128");
+ // }
+    //if(Passwordsize >= 8 &&Passwordsize <=128) {//prompts for password critera
+   // } 
+  // } 
+   // } 
+  //(let index = 0, index < Passwordsize.length; index++) { 
+    //var finalPassword = [lowercase, uppercase, SpecialCharacters, number];{
+    if (isLowerCase=true) {
     var randomPickLowerCase=Math.floor(Math.random()*lowercase.length)
     var pickOneLowerCaseLetter=lowercase.charAt(randomPickLowerCase)
-    finalPassword=finalPassword + pickOneLowerCaseLetter    
+    finalPassword=finalPassword + pickOneLowerCaseLetter;    
     }
-    if (isUppercase){ var randomPickUppercase=Math.floor(Math.random()*uppercase.length)
+    if (isUppercase=true){ var randomPickUppercase=Math.floor(Math.random()*uppercase.length)
     var pickOneUppercaseLetter=uppercase.charAt(randomPickUppercase)
-    finalPassword=finalPassword + pickOneUppercaseLetter
+    finalPassword=finalPassword + pickOneUppercaseLetter;
     }
     
-    if (isSpecialcharacter){ var randomPickSpecialcharacter=Math.floor(Math.random()*SpecialCharacters.length)
-    var pickOneSpecialcharacter = SpecialCharacters.charAt(randomPickSpecialcharacter)
-    finalPassword=finalPassword + pickOneSpecialcharacter }
-
-    if (isnumber){randomPickNumber=Math.floor(Math.random()*number.length)
-    var pickOneNumber = number.charAt(randomPickNumber)
-    finalPassword=finalPassword + pickOneNumber
+    if (isSpecialCharacters=true){ var randomPickSpecialCharacters=Math.floor(Math.random()*SpecialCharacters.length)
+    var pickOneSpecialCharacters = SpecialCharacters.charAt(randomPickSpecialcharacter)
+    finalPassword=finalPassword + pickOneSpecialcharacters;
     }
-    console.log(pickOneLowerCaseLetter, pickOneUppercaseLetter, pickOneSpecialcharacter, pickOneNumber)
-    added footer
+    if (isnumber=true){randomPickNumber=Math.floor(Math.random()*number.length)
+    var pickOneNumber = number.charAt(randomPickNumber)
+    finalPassword=finalPassword + pickOneNumber;
+    }
+    console.log(pickOneLowerCaseLetter, pickOneUppercaseLetter, pickOneSpecialCharacters, pickOneNumber)
+       
